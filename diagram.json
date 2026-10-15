@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "author": "Sivaharini S",
+  "editor": "wokwi",
+  "parts": [ { "id": "nucleo", "type": "board-st-nucleo-l031k6" } ],
+    "dependencies": {
+    "libraries": [
+      {
+        "name": "EloquentTinyML"
+      }
+    ]
+  },
+  "connections": [
+    [ "$serialMonitor:TX", "nucleo:VCP_RX", "", [] ],
+    [ "$serialMonitor:RX", "nucleo:VCP_TX", "", [] ]
+  ]
+}
